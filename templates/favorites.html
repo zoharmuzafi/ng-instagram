@@ -1,2 +1,14 @@
 <h1>Welcome to the Favorites Page!</h1>
-<h2>{{favoritesCtrlTest}}</h2>
+<div ng-repeat='photo in favorites'>
+	<div class="col-md-3 thumbnail">
+				<p>{{photo.username}}</p>
+				<p>
+					<ng-pluralize count="{{photo.likes}}"
+					                 when="{'0': 'Nobody liked.',
+					                     'one': 'only 1 person liked ',
+					                     'other': '{} likes'}">
+					</ng-pluralize>
+				</p>
+				<img src="{{photo.url}}">
+			</div>
+</div>
