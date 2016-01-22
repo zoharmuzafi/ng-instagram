@@ -31,6 +31,10 @@ app.controller('SearchCtrl', ['$scope', '$http', function ($scope, $http) {
      	 }
       );
 	};
+
+	$scope.savePhoto = function(photo){
+		console.log(photo);
+	};
 }]);
 
 app.controller('FavoritesCtrl', ['$scope', function ($scope) {
