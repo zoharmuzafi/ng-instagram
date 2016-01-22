@@ -1,2 +1,6 @@
 <h1>Welcome to the Search Page!</h1>
 <h2>{{searchCtrlTest}}</h2>
+<form  ng-submit="search()">
+	<input type="text" ng-model="search.tag"/>
+	<input type="submit" value="search"/>
+</form>
